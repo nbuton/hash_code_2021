@@ -14259,10 +14259,10 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list_file</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;c&quot;</span><span class="p">,</span><span class="s2">&quot;d&quot;</span><span class="p">,</span><span class="s2">&quot;e&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list_file</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;f&quot;</span><span class="p">]</span><span class="c1">#[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;]</span>
 <span class="k">for</span> <span class="n">fichier</span> <span class="ow">in</span> <span class="n">list_file</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">fichier</span><span class="p">)</span>
     <span class="n">fichier</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;data/&quot;</span><span class="o">+</span><span class="n">fichier</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
@@ -14283,13 +14283,14 @@ a.anchor-link {
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cars_number</span><span class="p">):</span>
         <span class="n">tab</span> <span class="o">=</span> <span class="n">all_lines</span><span class="p">[</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">streets_number</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
         <span class="n">nb_streets</span><span class="o">=</span><span class="n">tab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">list_of_streets</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">list_of_streets</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
         <span class="n">list_of_path</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">nb_streets</span><span class="p">,</span><span class="n">list_of_streets</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;simulation_duration :&quot;</span><span class="p">,</span><span class="n">simulation_duration</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;intersections_number :&quot;</span><span class="p">,</span><span class="n">intersections_number</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;streets_number :&quot;</span><span class="p">,</span><span class="n">streets_number</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cars_number :&quot;</span><span class="p">,</span><span class="n">cars_number</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;bonnus_point :&quot;</span><span class="p">,</span><span class="n">bonnus_point</span><span class="p">)</span>
+    <span class="n">used_street</span><span class="p">(</span><span class="n">list_of_path</span><span class="p">,</span><span class="n">dico_streets</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14309,38 +14310,31 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>a
-simulation_duration : 6
-intersections_number : 4
-streets_number : 5
-cars_number : 2
-bonnus_point : 1000
-b
-simulation_duration : 5070
-intersections_number : 7073
-streets_number : 9102
-cars_number : 1000
-bonnus_point : 1000
-c
-simulation_duration : 1640
-intersections_number : 10000
-streets_number : 35030
-cars_number : 1000
-bonnus_point : 100
-d
-simulation_duration : 8071
-intersections_number : 8000
-streets_number : 95928
-cars_number : 1000
-bonnus_point : 1000
-e
-simulation_duration : 676
-intersections_number : 500
-streets_number : 998
+<pre>f
+simulation_duration : 1992
+intersections_number : 1662
+streets_number : 10000
 cars_number : 1000
 bonnus_point : 500
+6217
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
 </div>
 
 </div>
@@ -14382,43 +14376,30 @@ bonnus_point : 500
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="k">def</span> <span class="nf">used_street</span><span class="p">(</span><span class="n">list_of_path</span><span class="p">,</span><span class="n">dico_streets</span><span class="p">):</span>
+    <span class="n">dico_street_use</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">list_of_path</span> <span class="p">:</span>
+        <span class="k">for</span> <span class="n">street</span> <span class="ow">in</span> <span class="n">path</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">street</span> <span class="ow">in</span> <span class="n">dico_street_use</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+                <span class="n">dico_street_use</span><span class="p">[</span><span class="n">street</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">dico_street_use</span><span class="p">[</span><span class="n">street</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">dico_street_use</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">dico_street_use</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)}</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dico_street_use</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">dico_street_use</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">dico_street_use</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>simulation_duration : 6
-intersections_number : 4
-streets_number : 5
-cars_number : 2
-bonnus_point : 1000
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14427,7 +14408,9 @@ bonnus_point : 1000
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">path_stats</span><span class="p">(</span><span class="n">list_of_path</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">list_of_path</span> <span class="p">:</span>
+        
 </pre></div>
 
      </div>
